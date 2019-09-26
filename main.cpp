@@ -19,7 +19,10 @@ void Read(QString Filename,QVector<float> &vector){
 
 
     QStringList strList = mText.split(QRegExp("[ ]"),QString::SkipEmptyParts);
-    float aum=0.1;
+    //rex.txt aum = 0.4
+
+
+    float aum=0.4;
 
     for(int i=0; i<strList.length(); i++)
     {
@@ -38,11 +41,10 @@ int main(int argc, char *argv[])
 
     QVector<float> dat;
 
-    QString mFilename = "C:/Users/Acer/Documents/puntos3d/airboat.txt";
+    QString mFilename = "C:/Users/Acer/Documents/KdTree/puntos3d/rex.txt";
 
 
-    //1 conejo coord2
-    //0.4
+
     Read(mFilename,dat);
     qDebug() << dat.size()/3;
 
